@@ -1,0 +1,107 @@
+body{
+    background-color: 236, 222, 204 ;
+    /* background-image: url(./images/icons/WallpaperDog-20471199.jpg); */
+    font-family: 'Comfortaa', cursive;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+#save, #bkmrk , #warning {
+    margin-top: 20%;
+}
+
+
+#save{
+    font-size: 20px;
+    position: relative;
+    top: 225px;
+    margin-left: 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+#save:hover{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+    color: #262b30;
+}
+
+a:hover{
+    font-size: larger;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+#bkmrk, #warning{
+    position: relative;
+    margin-left: 38%;
+    top: 225px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    width: 400px;
+    height: 20px;
+}
+
+#warning{
+    font-size: small;
+}
+/* flexbox main */
+#center{
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 8px solid #DE3163; */
+    background-color: rgba(38, 43, 48, 0.5);
+    width: 40%;
+    flex-grow: 2;
+
+
+}
+
+img{
+    width: 250px;
+    
+}
+
+#left{
+    padding: 10px;
+    width: 80px;
+    
+}
+
+#right{
+    padding: 8px;
+    
+}
+/*date and times*/
+#time{
+   position: absolute;
+   color: #262b30;
+   margin-top: 6px;
+   margin-left: 20px;
+   font-size: x-large;
+}
+
+#clock{
+    position: absolute;
+    color: #262b30;
+    margin-left: 90%;
+    margin-top: 6px;
+    font-size: x-large;
+}
+
+#addMenu{
+    margin-top: 25%;
+    margin-left: 50%;
+}
