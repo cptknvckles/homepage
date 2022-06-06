@@ -1,68 +1,63 @@
 body{
-    background-color: 236, 222, 204 ;
-    /* background-image: url(./images/icons/WallpaperDog-20471199.jpg); */
+    /* background-color: 236, 222, 204 ; */
+    /* background-image: url(./images/night-time.jpg); */
     font-family: 'Comfortaa', cursive;
 }
+
+.darkMode {
+    background-image: url(./images/night-time.jpg);
+}
+
 
 ul{
     text-decoration: none;
     list-style: none;
 }
 
-#save, #bkmrk , #warning {
-    margin-top: 20%;
-}
-
-
-#save{
-    font-size: 20px;
-    position: relative;
-    top: 225px;
-    margin-left: 5px;
-    border-radius: 6px;
-    border: none;
-}
-
-#save:hover{
-    color: green;
-}
-
 a{
     text-decoration: none;
-    color: #262b30;
+    color: wheat;
+    font-size: 25px;
 }
 
 a:hover{
-    font-size: larger;
+    font-size: 30px;
+    padding-left: 10px;
     font-weight: bold;
     color: aliceblue;
 }
 
+/*sideBar*/
 
-#bkmrk, #warning{
-    position: relative;
-    margin-left: 38%;
-    top: 225px;
-    border-radius: 8px;
+button {
+    background: none;
     border: none;
-    text-align: center;
-    width: 400px;
-    height: 20px;
 }
 
-#warning{
-    font-size: small;
+.sideBar{
+    position: absolute;
+    margin-right: 100%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
 }
+
+
+
+
 /* flexbox main */
 #center{
     position: absolute;
-    top: 250px;
+    margin-top: 15%;
     left: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: 8px solid #DE3163; */
-    background-color: rgba(38, 43, 48, 0.5);
+    background-color: rgba(38, 43, 48, 0.85);
+    border-radius: 8px;
     width: 40%;
     flex-grow: 2;
 
@@ -75,7 +70,7 @@ img{
 }
 
 #left{
-    padding: 10px;
+    padding: 15px;
     width: 80px;
     
 }
@@ -86,22 +81,34 @@ img{
 }
 /*date and times*/
 #time{
+   padding: 10px; 
+   text-align: center;
+   background-color: #262b30;
+   border-radius: 6px;
    position: absolute;
-   color: #262b30;
+   color: white;
    margin-top: 6px;
    margin-left: 20px;
    font-size: x-large;
 }
 
 #clock{
-    position: absolute;
-    color: #262b30;
+    padding: 10px;
+    text-align: center;
+    background-color: #262b30;
+    border-radius: 6px;
+    color: white;
     margin-left: 90%;
     margin-top: 6px;
     font-size: x-large;
 }
 
-#addMenu{
-    margin-top: 25%;
-    margin-left: 50%;
+.footer{
+    background-color: #262b30;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    margin-top: 45%;
+    margin-left: 45%;
+    margin-right: 45%;
 }
