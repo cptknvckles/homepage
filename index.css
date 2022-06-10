@@ -2,12 +2,19 @@ body{
     /* background-color: 236, 222, 204 ; */
     /* background-image: url(./images/night-time.jpg); */
     font-family: 'Comfortaa', cursive;
+    transition: background-image 0.2s linear;
+    background-image: url(./images/daytime.jpg);
+    
 }
 
 .darkMode {
     background-image: url(./images/night-time.jpg);
 }
 
+/* .dayMode {
+    
+    background-image: url(./images/daytime.jpg);
+} */
 
 ul{
     text-decoration: none;

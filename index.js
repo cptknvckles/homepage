@@ -1,16 +1,17 @@
 let addEl = document.getElementById('addBack')
 let nightEl = document.getElementById('darkMode')
+let dayEl = document.getElementById('dayMode')
 var clockEl = document.getElementById('clock')
 var dateAndTime = document.getElementById('time')
 var currentTime = new Date()
 dateAndTime.innerHTML = 'Today is ' + currentTime.toDateString()
+
 //current time
 setInterval(showTime, 1000);
 function showTime() {
 	let time = new Date();
 	let hour = time.getHours();
 	let min = time.getMinutes();
-	// let sec = time.getSeconds();
 	am_pm = "AM";
 
 	if (hour > 12) {
@@ -24,8 +25,7 @@ function showTime() {
 
 	hour = hour < 10 ? "0" + hour : hour;
 	min = min < 10 ? "0" + min : min;
-	// sec = sec < 10 ? "0" + sec : sec;
-
+	
 	let currentTime = hour + ":"
 			+ min + " " + am_pm;
 
@@ -37,11 +37,10 @@ showTime();
 
 
 // nightmode
-nightEl.addEventListener("click", function(event){
-	document.body.style.backgroundImage = "url(./images/night-time.jpg)"
-	if(this.click){
-		event.target.style.color = 'gold'
-		
-	}
+nightEl.addEventListener("click", () =>{
+	document.body.classList.toggle('darkMode')
+	nightEl.style.color = 'gold'
+	
+
+
 })
-//daymode
