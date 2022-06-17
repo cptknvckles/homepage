@@ -1,20 +1,20 @@
+@import "dark.css";
+
+.darkMode {
+    @import url("dark.css")
+}
+
+
 body{
     /* background-color: 236, 222, 204 ; */
     /* background-image: url(./images/night-time.jpg); */
     font-family: 'Comfortaa', cursive;
-    transition: background-image 0.2s linear;
-    background-image: url(./images/daytime.jpg);
+    transition: background-image 1s ease-in-out;
+    background-image: url(./images/city_morning.jpg);
+    background-position: center;
+    
     
 }
-
-.darkMode {
-    background-image: url(./images/night-time.jpg);
-}
-
-/* .dayMode {
-    
-    background-image: url(./images/daytime.jpg);
-} */
 
 ul{
     text-decoration: none;
@@ -23,7 +23,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: wheat;
+    color: #262b30;
     font-size: 25px;
 }
 
@@ -37,8 +37,10 @@ a:hover{
 /*sideBar*/
 
 button {
-    background: none;
-    border: none;
+    background-color: rgba(156, 17, 236);
+    padding: 10px;
+    border-radius: 6px;
+    color: #262b30;
 }
 
 .sideBar{
@@ -63,7 +65,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(38, 43, 48, 0.85);
+    background-color: rgba(206, 216, 226, 0.85);
     border-radius: 8px;
     width: 40%;
     flex-grow: 2;
@@ -88,33 +90,47 @@ img{
 }
 /*date and times*/
 #time{
+   top: 10px;
    padding: 10px; 
    text-align: center;
-   background-color: #262b30;
+   background-color: rgba(206, 216, 226);
    border-radius: 6px;
    position: absolute;
-   color: white;
-   margin-top: 6px;
+   color: #262b30;
    margin-left: 20px;
    font-size: x-large;
 }
 
 #clock{
+    top: 10px;
     padding: 10px;
     text-align: center;
-    background-color: #262b30;
+    background-color: rgba(206, 216, 226);
     border-radius: 6px;
-    color: white;
+    color: #262b30;
     margin-left: 90%;
-    margin-top: 6px;
     font-size: x-large;
 }
 
+#greeting{
+    position: absolute;
+    background-color: rgba(206, 216, 226);
+    color: #262b30;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 42%;
+    top: 10px;
+    
+}
+
+
 .footer{
-    background-color: #262b30;
+    background-color: rgba(206, 216, 226);
     border-radius: 6px;
     text-align: center;
-    color: white;
+    color: #262b30;
     margin-top: 45%;
     margin-left: 45%;
     margin-right: 45%;

@@ -1,3 +1,6 @@
+let studies = ['JavaScript', 'Rust', 'Solidity']
+let themeEl = document.querySelector('#theme-link')
+let greetingEl = document.getElementById('greeting')
 let addEl = document.getElementById('addBack')
 let nightEl = document.getElementById('darkMode')
 let dayEl = document.getElementById('dayMode')
@@ -33,14 +36,32 @@ function showTime() {
 }
 showTime();
 
+//studies greeting
+function showStudy(){
+	let studyChoice = studies[Math.floor(Math.random()*studies.length)]
+	return studyChoice
+}
+
+function studyLink(){
+	greetingEl.innerHTML = "Today we are studying " + showStudy()
+	
+}
+
+
+studyLink()
 
 
 
 // nightmode
 nightEl.addEventListener("click", () =>{
-	document.body.classList.toggle('darkMode')
-	nightEl.style.color = 'gold'
+	if(themeEl.getAttribute('href') == 'light.css'){
+		themeEl.href = 'dark.css'
+		nightEl.innerHTML = `<i class='fa-solid fa-sun fa-2xl'>`
+	}
+	else {
+		themeEl.href = 'light.css'
+		nightEl.innerHTML = `<i class='fa-solid fa-moon fa-2xl'>`
+		
+	}
 	
-
-
 })

@@ -1,0 +1,126 @@
+body{
+    /* background-color: 236, 222, 204 ; */
+    /* background-image: url(./images/night-time.jpg); */
+    font-family: 'Comfortaa', cursive;
+    transition: background-image 1s ease-out;
+    background-image: url(./images/night-time.jpg);
+    
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 25px;
+}
+
+a:hover{
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+/*sideBar*/
+
+
+.sideBar{
+    position: absolute;
+    margin-right: 100%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: gold;
+}
+
+
+/* flexbox main */
+#center{
+    position: absolute;
+    margin-top: 15%;
+    left: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(38, 43, 48, 0.85);
+    border-radius: 8px;
+    width: 40%;
+    flex-grow: 2;
+
+
+}
+
+img{
+    width: 250px;
+    
+}
+
+#left{
+    padding: 15px;
+    width: 80px;
+    
+}
+
+#right{
+    padding: 8px;
+    
+}
+/*date and times*/
+#time{
+   top: 10px;
+   padding: 10px; 
+   text-align: center;
+   background-color: #262b30;
+   border-radius: 6px;
+   position: absolute;
+   color: white;
+   margin-left: 20px;
+   font-size: x-large;
+}
+
+#clock{
+    top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #262b30;
+    border-radius: 6px;
+    color: white;
+    margin-left: 90%;
+    font-size: x-large;
+}
+
+#greeting{
+    position: absolute;
+    background-color: rgba(38, 43, 48, 0.85);
+    color: wheat;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 42%;
+    top: 10px;
+    
+}
+
+
+.footer{
+    background-color: #262b30;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    margin-top: 45%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
